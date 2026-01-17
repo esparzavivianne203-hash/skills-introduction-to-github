@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2: Commit a File - GitHub Skills</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>💾 Unit 2: Commit a File</h1>
+            <p>Test your knowledge of Git commits</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>About This Unit</h2>
+            <p>This unit covers commits in Git - what they are, how to make them, and why they're essential to version control.</p>
+        </section>
+
+        <section class="quiz-container">
+            <h2>Knowledge Check</h2>
+            
+            <div class="question">
+                <h3>Question 1: What is a commit in Git?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="a">
+                            A way to delete files
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="b">
+                            A saved change to your repository with a message describing what you changed
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="c">
+                            A type of branch
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="d">
+                            A GitHub user
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q1" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 2: What should a good commit message include?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="a">
+                            Just random characters
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="b">
+                            Nothing, commit messages are optional
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="c">
+                            A clear description of what changed and why
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="d">
+                            Your password
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q2" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 3: What happens when you make a commit?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="a">
+                            Your files are deleted
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="b">
+                            Git saves a snapshot of your changes with metadata like author, time, and message
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="c">
+                            Nothing happens
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="d">
+                            Your repository is published
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q3" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 4: Why are commits important in Git?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="a">
+                            They aren't important
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="b">
+                            They create a history of changes that you can review and revert if needed
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="c">
+                            They make your repository bigger
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="d">
+                            They slow down development
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q4" class="result"></div>
+            </div>
+
+            <!-- Correct answers: Q1=b (saved change), Q2=c (clear description), Q3=b (saves snapshot), Q4=b (history of changes) -->
+            <button class="btn" onclick="submitQuiz(2, ['b', 'c', 'b', 'b'])">Submit Quiz</button>
+            <div id="quiz-result" class="result"></div>
+        </section>
+
+        <section class="resources">
+            <h2>Learn More</h2>
+            <ul>
+                <li><a href="https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits" target="_blank">About Commits - GitHub Docs</a></li>
+                <li><a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" target="_blank">Recording Changes - Git Book</a></li>
+            </ul>
+        </section>
+
+        <div class="nav-buttons">
+            <a href="unit1.html" class="btn btn-secondary">← Unit 1</a>
+            <a href="unit3.html" class="btn">Next: Unit 3 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GitHub Skills • <a href="https://github.com">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

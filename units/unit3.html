@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3: Open a Pull Request - GitHub Skills</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔀 Unit 3: Open a Pull Request</h1>
+            <p>Test your knowledge of pull requests</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>About This Unit</h2>
+            <p>This unit covers pull requests - a key feature of GitHub that enables collaborative development and code review.</p>
+        </section>
+
+        <section class="quiz-container">
+            <h2>Knowledge Check</h2>
+            
+            <div class="question">
+                <h3>Question 1: What is a pull request?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="a">
+                            A way to delete a branch
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="b">
+                            A request to merge your changes from one branch into another
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="c">
+                            A type of file
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="d">
+                            A way to download code
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q1" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 2: What can you do in a pull request?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="a">
+                            Only view code
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="b">
+                            Discuss changes, review code, and collaborate with others
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="c">
+                            Delete the repository
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="d">
+                            Nothing
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q2" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 3: Why are pull requests important for collaboration?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="a">
+                            They aren't important
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="b">
+                            They allow team members to review and discuss changes before merging
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="c">
+                            They make development slower
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="d">
+                            They delete old code
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q3" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 4: What happens after a pull request is approved?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="a">
+                            The repository is deleted
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="b">
+                            Nothing changes
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="c">
+                            The changes can be merged into the target branch
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="d">
+                            All branches are deleted
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q4" class="result"></div>
+            </div>
+
+            <!-- Correct answers: Q1=b (request to merge), Q2=b (discuss/review), Q3=b (review before merging), Q4=c (can be merged) -->
+            <button class="btn" onclick="submitQuiz(3, ['b', 'b', 'b', 'c'])">Submit Quiz</button>
+            <div id="quiz-result" class="result"></div>
+        </section>
+
+        <section class="resources">
+            <h2>Learn More</h2>
+            <ul>
+                <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests" target="_blank">About Pull Requests - GitHub Docs</a></li>
+                <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests" target="_blank">Reviewing Changes - GitHub Docs</a></li>
+            </ul>
+        </section>
+
+        <div class="nav-buttons">
+            <a href="unit2.html" class="btn btn-secondary">← Unit 2</a>
+            <a href="unit4.html" class="btn">Next: Unit 4 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GitHub Skills • <a href="https://github.com">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
