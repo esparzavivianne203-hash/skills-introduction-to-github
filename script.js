@@ -1,4 +1,10 @@
 // Main site functionality
+// Animation constants
+const CARD_ANIMATION_OFFSET = '20px';
+const CARD_ANIMATION_DURATION = '0.5s';
+const CARD_ANIMATION_DELAY = 100; // milliseconds
+const CARD_STAGGER_DELAY = 100; // milliseconds between each card
+
 document.addEventListener('DOMContentLoaded', function() {
     console.log('GitHub Skills Unit Testing Site loaded');
     
@@ -7,14 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
     unitCards.forEach((card, index) => {
         setTimeout(() => {
             card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.5s, transform 0.5s';
+            card.style.transform = `translateY(${CARD_ANIMATION_OFFSET})`;
+            card.style.transition = `opacity ${CARD_ANIMATION_DURATION}, transform ${CARD_ANIMATION_DURATION}`;
             
             setTimeout(() => {
                 card.style.opacity = '1';
                 card.style.transform = 'translateY(0)';
-            }, 100);
-        }, index * 100);
+            }, CARD_ANIMATION_DELAY);
+        }, index * CARD_STAGGER_DELAY);
     });
 });
 
