@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1: Create a Branch - GitHub Skills</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📌 Unit 1: Create a Branch</h1>
+            <p>Test your knowledge of Git branches</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>About This Unit</h2>
+            <p>This unit covers the fundamentals of Git branches, including what they are, why they're important, and how to create them.</p>
+        </section>
+
+        <section class="quiz-container">
+            <h2>Knowledge Check</h2>
+            
+            <div class="question">
+                <h3>Question 1: What is a branch in Git?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="a">
+                            A way to delete code from your repository
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="b">
+                            A parallel version of your repository that allows you to work without disrupting the main project
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="c">
+                            A type of file in your repository
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="d">
+                            A way to compress your code
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q1" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 2: What is the name of the default branch in a GitHub repository?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="a">
+                            master
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="b">
+                            main
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="c">
+                            default
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="d">
+                            origin
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q2" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 3: Why should you create a new branch for your work?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="a">
+                            To make your repository larger
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="b">
+                            To keep everyone's work safe while you make changes
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="c">
+                            To slow down development
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="d">
+                            Branches are not necessary
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q3" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 4: In the exercise, what was the name you were asked to give your first branch?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="a">
+                            new-branch
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="b">
+                            my-first-branch
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="c">
+                            test-branch
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="d">
+                            dev
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q4" class="result"></div>
+            </div>
+
+            <button class="btn" onclick="submitQuiz(1, ['b', 'b', 'b', 'b'])">Submit Quiz</button>
+            <div id="quiz-result" class="result"></div>
+        </section>
+
+        <section class="resources">
+            <h2>Learn More</h2>
+            <ul>
+                <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches" target="_blank">About Branches - GitHub Docs</a></li>
+                <li><a href="https://www.youtube.com/watch?v=pBy1zgt0XPc" target="_blank">What is GitHub? - Video</a></li>
+            </ul>
+        </section>
+
+        <div class="nav-buttons">
+            <a href="../index.html" class="btn btn-secondary">← Back to Home</a>
+            <a href="unit2.html" class="btn">Next: Unit 2 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GitHub Skills • <a href="https://github.com">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

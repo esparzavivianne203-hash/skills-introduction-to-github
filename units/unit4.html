@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 4: Merge Your Pull Request - GitHub Skills</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>✅ Unit 4: Merge Your Pull Request</h1>
+            <p>Test your knowledge of merging</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>About This Unit</h2>
+            <p>This unit covers the final step of the GitHub workflow - merging your pull request to integrate your changes into the main codebase.</p>
+        </section>
+
+        <section class="quiz-container">
+            <h2>Knowledge Check</h2>
+            
+            <div class="question">
+                <h3>Question 1: What does merging a pull request do?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="a">
+                            Deletes your branch
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="b">
+                            Integrates the changes from your branch into the target branch
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="c">
+                            Creates a new repository
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" value="d">
+                            Removes all commits
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q1" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 2: What should you do before merging a pull request?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="a">
+                            Delete all files
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="b">
+                            Make sure it has been reviewed and all checks pass
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="c">
+                            Nothing, just merge immediately
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" value="d">
+                            Close the pull request
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q2" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 3: After merging, what can you optionally do with the feature branch?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="a">
+                            Delete it since the changes are now in the main branch
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="b">
+                            You must keep all branches forever
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="c">
+                            Rename it
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" value="d">
+                            Archive the repository
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q3" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h3>Question 4: What does the complete GitHub workflow include?</h3>
+                <ul class="options">
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="a">
+                            Only pushing code
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="b">
+                            Creating a branch, making commits, opening a pull request, and merging
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="c">
+                            Deleting files
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q4" value="d">
+                            Just creating repositories
+                        </label>
+                    </li>
+                </ul>
+                <div id="result-q4" class="result"></div>
+            </div>
+
+            <button class="btn" onclick="submitQuiz(4, ['b', 'b', 'a', 'b'])">Submit Quiz</button>
+            <div id="quiz-result" class="result"></div>
+        </section>
+
+        <section class="resources">
+            <h2>Learn More</h2>
+            <ul>
+                <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request" target="_blank">Merging a Pull Request - GitHub Docs</a></li>
+                <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges" target="_blank">About Pull Request Merges - GitHub Docs</a></li>
+            </ul>
+        </section>
+
+        <div class="nav-buttons">
+            <a href="unit3.html" class="btn btn-secondary">← Unit 3</a>
+            <a href="../index.html" class="btn">Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GitHub Skills • <a href="https://github.com">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
